@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{TITLE}}</title>
+  <style>
+    :root{--ink:#17213b;--muted:#65708a;--bg:#f4f7fb;--card:#fff;--line:#dfe6f0;--accent:#5b5bd6;--soft:#ececff}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 Inter,system-ui,sans-serif}
+    main{max-width:1180px;margin:auto;padding:40px 24px 80px}.hero{padding:30px;border-radius:24px;background:linear-gradient(135deg,#181d38,#4e4db2);color:#fff}
+    h1,h2,h3{line-height:1.25}.eyebrow{letter-spacing:.08em;text-transform:uppercase;opacity:.72}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:20px 0}
+    .card,section{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 10px 30px rgba(30,40,80,.05)}
+    section{margin-top:20px}.muted{color:var(--muted)}a{color:var(--accent)}code{background:var(--soft);padding:.2em .45em;border-radius:6px}
+    @media(max-width:640px){main{padding:20px 14px 56px}.hero{padding:22px}}
+  </style>
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <div class="eyebrow">AX WORKSHOP · MANAGER VIEW</div>
+      <h1>{{TITLE}}</h1>
+      <p>{{SUBTITLE}}</p>
+    </header>
+    <div class="grid">{{SUMMARY_CARDS}}</div>
+    <section><h2>수강생별 준비 현황</h2>{{PARTICIPANT_CARDS}}</section>
+    <section><h2>교육 운영안</h2>{{CURRICULUM}}</section>
+    <section><h2>필수 확인 및 유의사항</h2>{{CAUTIONS}}</section>
+  </main>
+</body>
+</html>

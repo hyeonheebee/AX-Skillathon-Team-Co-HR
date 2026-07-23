@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>{{TITLE}}</title>
+  <style>
+    :root{--ink:#152238;--muted:#637087;--bg:#f5f7fb;--card:#fff;--line:#dde5ef;--accent:#4355db;--accent2:#17a589}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,sans-serif}
+    main{max-width:940px;margin:auto;padding:32px 20px 72px}.hero{background:#151d38;color:#fff;padding:30px;border-radius:24px}.identity{opacity:.75}
+    section{margin-top:18px;padding:22px;background:var(--card);border:1px solid var(--line);border-radius:18px}.tag{display:inline-block;padding:5px 10px;border-radius:999px;background:#e9edff;color:var(--accent);font-size:13px}
+    button{border:0;border-radius:12px;padding:11px 16px;background:var(--accent);color:#fff;font-weight:700;cursor:pointer}button:hover{filter:brightness(1.08)}
+    input,select,textarea{width:100%;padding:11px;border:1px solid var(--line);border-radius:10px;background:#fff}.muted{color:var(--muted)}.result{border-left:4px solid var(--accent2);padding-left:14px}
+    @media(max-width:640px){main{padding:18px 12px 48px}.hero,section{padding:18px}}
+  </style>
+</head>
+<body data-participant-id="{{PARTICIPANT_ID}}">
+  <main>
+    <header class="hero">
+      <span class="tag">개인 맞춤 프로토타입</span>
+      <h1>{{TITLE}}</h1>
+      <p class="identity">{{MASKED_NAME}} · {{MASKED_ORGANIZATION}}</p>
+      <p>{{DESCRIPTION}}</p>
+    </header>
+    {{CONTENT}}
+  </main>
+  <script>{{SCRIPT}}</script>
+</body>
+</html>

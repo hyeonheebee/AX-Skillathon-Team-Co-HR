@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pre-AX Settings"
+  short_description: "사전조사 CSV로 AX 교육 준비와 맞춤 프로토타입 생성"
+  default_prompt: "Use $pre-ax-settings to turn this pre-survey CSV into AX training setup materials, manager guidance, participant prototypes, and Slack drafts."
